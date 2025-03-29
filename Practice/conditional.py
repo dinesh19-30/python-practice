@@ -8,5 +8,4 @@ elif age < 0:
 elif age>=18:
     print("how old are you: ")     
 else:
-    print("your are a child")    
-100
+    print("your are a child")
