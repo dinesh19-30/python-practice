@@ -9,4 +9,10 @@ else:
     print("The outdoor event is scheduled")    
 
 #AND
+tem=20
+is_sun=False
+if tem>=20 and is_sun:
+    print("Too hot outside")
+elif temp<0 and is_sun:
+    print("Too cold")    
     
