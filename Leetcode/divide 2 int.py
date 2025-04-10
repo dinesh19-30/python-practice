@@ -13,22 +13,16 @@ class Solution:
         quotient = 0
 
         while dividend >= divisor:
-            b = divisor
-            cnt = 1
-            while dividend >= b:
-                res += cnt
-                dividend -= b
-                b = b * 2
-                cnt = cnt * 2
-
-        res = sig * res
-
-        if res <= -2**31:
-            res = -2**31
-        if res >= 2**31 - 1:
-            res = 2**31 - 1
-        return res
-
+            temp,multiple=divisor,1
+            while dividend>=(temp<<1):
+                    temp<<=1
+                    multiple<<=1
+            dividend-=temp
+            quotient+=multiple
+        
+        quotient= -quotient if negative else quotient
+        return quotient
+    
 if __name__ == "__main__":
     solution = Solution()
     
