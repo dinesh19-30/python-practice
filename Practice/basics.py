@@ -4,10 +4,10 @@
 #print(type(name))
 
 #string
-f_name="H"
+f_name="12"
 l_name="DINESH"
 full_name=f_name +" "+l_name
-print("hello"+full_name)
+print("hello " +full_name)
 print(type(full_name))
 
 #int
